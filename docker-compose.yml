@@ -1,0 +1,17 @@
+version: "3"
+
+volumes:
+  mongostore:
+networks:
+  teamnet:
+
+services:
+  mongodb:
+    image: mongo:4.2.6
+    ports:
+      - 27017:27017
+    volumes:
+      - mongostore:/data/db
+    restart: always
+    networks:
+      - teamnet
