@@ -31,9 +31,21 @@ After clonning the repo to your local machine and moving into the cloned folder,
 
 `src/index.js` is the entry to the project and source code should go into the `src` folder.
 
+Run `yarn dev` or `npm run dev` to start the development server.
+
 All tests should be written in the `__tests__' folder. There's a sample in there.
 
-This starter uses [Parcel](https://parceljs.org/getting_started.html) as the bundler. It is much simpler that WebPack and the others
+This starter uses [Parcel](https://parceljs.org/getting_started.html) as the bundler. It is much simpler that WebPack and the others.
+
+A `docker-compose.yml` file is included which installs and configure mongodb with persistent storage to help speed up development process. Make sure you have docker installed on your system and running. Then navigate to location of the docker-compose.yml file and run:
+
+`docker-compose up`
+
+When you are done developing/testing you can run:
+
+`docker-compose down`
+
+This would shutdown the system.
 
 #### Hints
 
@@ -42,11 +54,14 @@ This starter uses [Parcel](https://parceljs.org/getting_started.html) as the bun
 - Run tests: `yarn test`
 - Run tests with test coverage info: `yarn test:cover`
 - Check the codebase for proper syntax and formatting compliance: `yarn lint`
-- Run your app in local dev mode: `yarn start`. This puts the bundled app in a `dist` folder, set up a local web server at localhost:1234, and continues to watch for your code changes which it syncs with the local server. This means if you loaded the app in a browser, it will auto-refresh as you code along. Feel free to use whatever bundler best meets your needs. Parcel was only added as a sample and for those looking for a simple but effective solution to the hassle of bundlers. 
+- Run your app in local dev mode: `yarn dev`. This puts the bundled app in a `dist` folder, set up a local web server at localhost:5000, and continues to watch for your code changes which it syncs with the local server. This means if you loaded the app in a browser, it will auto-refresh as you code along. Feel free to use whatever bundler best meets your needs. Parcel was only added as a sample and for those looking for a simple but effective solution to the hassle of bundlers. 
 
 ## Authors
 
-List the team behind this project. Their names linked to their Github, LinkedIn, or Twitter accounts should siffice. Ok to signify the role they play in the project, including the TTL and mentor
+Ifere Okibe [LinkedIn](https://www.linkedin.com/in/ifere-jo/) [Twitter](https://twitter.com/Iam_Ifere)
+Opysko
+Shedrack Ajaegbu
+Samuel Alex
 
 ## Contributing
 If this project sounds interesting to you and you'd like to contribute, thank you!

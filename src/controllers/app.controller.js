@@ -1,0 +1,1 @@
+// Holds the logic for the teacher model
