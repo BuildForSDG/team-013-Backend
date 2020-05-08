@@ -37,7 +37,7 @@ All tests should be written in the `__tests__' folder. There's a sample in there
 
 This starter uses [Parcel](https://parceljs.org/getting_started.html) as the bundler. It is much simpler that WebPack and the others.
 
-A `docker-compose.yml` file is included which installs and configure mongodb with persistent storage to help speed up development process. Make sure you have docker installed on your system and running. Then navigate to location of the docker-compose.yml file and run:
+A `docker-compose.yml` file is included which installs and configure mongodb with persistent storage to help speed up development process. Make sure you have docker installed on your system and running. Then navigate to the location of the docker-compose.yml file and run:
 
 `docker-compose up`
 
@@ -60,10 +60,10 @@ This would shutdown the system.
 
 ## Authors
 
-Ifere Okibe [LinkedIn](https://www.linkedin.com/in/ifere-jo/) [Twitter](https://twitter.com/Iam_Ifere)
-Opysko
-Shedrack Ajaegbu
-Samuel Alex
+- Ifere Okibe [LinkedIn](https://www.linkedin.com/in/ifere-jo/) [Twitter](https://twitter.com/Iam_Ifere)
+- Opysko
+- Shedrack Ajaegbu
+- Samuel Alex
 
 ## Contributing
 If this project sounds interesting to you and you'd like to contribute, thank you!
