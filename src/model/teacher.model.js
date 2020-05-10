@@ -1,74 +1,179 @@
-/* eslint-disable linebreak-style */
-/** Model implementing a teachers application */
+import bcrypt from 'bcrypt';
+import { config as dotConfig } from 'dotenv';
+import jwt from 'jsonwebtoken';
+import { model, Schema } from 'mongoose';
+import validator from 'validator';
+import uniqueValidator from 'mongoose-unique-validator';
 
-/* eslint-disable no-undef */
-/* eslint-disable linebreak-style */
-import mongoose from 'mongoose';
-import { Addschema } from './address.model';
+dotConfig();
 
-const { Schema } = mongoose;
-
-const Tschema = new Schema({
-  fullname: {
-    type: String,
-    required: true
-  },
-  username: {
-    type: String,
-    required: true
-  },
-  email: {
-    type: String,
-    required: true
-  },
-  password: {
-    type: String,
-    // Password must be at least 8 characters, no more than 12 characters,
-    // and must include at least one upper case letter, one lower case letter,
-    // and one numeric digit
-    match: /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,12}$/,
-    required: true
-  },
-  phonenumber: {
-    type: String,
-    required: true
-  },
-  yoe: {
-    type: Number,
-    required: true
-  },
-  grade: {
-    type: String,
-    required: true
-  },
-  study: {
-    type: String,
-    required: true
-  },
-  address: Addschema,
-  approved: {
-    type: Boolean,
-    default: false
-  },
-  gradpoint: {
-    type: String,
-    default: '0'
-  },
-  tokens: {
-    type: [
-      {
-        token: {
-          type: String,
-          required: true
+const teacherSchema = new Schema(
+  {
+    firstName: {
+      type: String,
+      required: true,
+      trim: true
+    },
+    lastName: {
+      type: String,
+      required: true,
+      trim: true
+    },
+    username: {
+      type: String,
+      trim: true,
+      unique: true
+    },
+    email: {
+      type: String,
+      lowercase: true,
+      unique: true,
+      trim: true,
+      validate(value) {
+        if (!validator.isEmail(value)) {
+          throw new Error('Invalid Email!');
         }
+        return validator.isEmail(value);
       }
-    ]
+    },
+    phone: {
+      type: String,
+      required: true,
+      unique: true,
+      validate(value) {
+        if (!validator.isMobilePhone(value, ['en-NG', 'en-GH'])) {
+          throw new Error('Invalid Phone Number!');
+        }
+        return validator.isMobilePhone(value);
+      }
+    },
+    tokens: {
+      type: [
+        {
+          token: {
+            type: String,
+            required: true
+          }
+        }
+      ]
+    },
+    password: {
+      type: String,
+      required: true,
+      minlength: 6
+    },
+    role: {
+      type: String,
+      default: 'user'
+    },
+    yearOfExperience: {
+      type: String
+    },
+    school: {
+      type: String,
+      required: true
+    },
+    levelOfEducation: {
+      type: String
+    },
+    courseOfStudy: {
+      type: String
+    },
+    approved: {
+      type: Boolean,
+      default: false
+    },
+    address: {
+      type: String
+    },
+    state: {
+      type: String,
+      required: true
+    },
+    country: {
+      type: String,
+      default: 'Nigeria'
+    },
+    grade: {
+      type: String
+    },
+    gpa: {
+      type: String
+    },
+    image: {
+      type: String
+    },
+    gender: {
+      type: String,
+      enum: ['male', 'female'],
+      required: true
+    },
+    dateOfBirth: {
+      type: String,
+      required: true
+    }
+  },
+  {
+    timestamps: true,
+    toJSON: {
+      transform(doc, ref) {
+        delete ref.password;
+        delete ref.tokens;
+      }
+    },
+    toObject: {
+      transform(doc, ref) {
+        delete ref.password;
+        delete ref.tokens;
+      }
+    }
   }
+);
 
-}, {
-  // Automatically adds a createdAt and updatedAt filed to schema
-  timestamps: true
+teacherSchema.pre('save', async function save(next) {
+  try {
+    const user = this;
+
+    if (!user.isModified('password')) {
+      return next();
+    }
+    user.password = await bcrypt.hash(user.password, 10);
+    next();
+  } catch (e) {
+    next(e);
+  }
 });
 
-const TeacherModel = mongoose.model('TeacherModel', Tschema);
-export default TeacherModel;
+teacherSchema.statics.findByCredentials = async (loginKey, password) => {
+  const user = await Teacher.findOne({ phone: loginKey }) ||
+    await Teacher.findOne({ username: loginKey }) ||
+    await Teacher.findOne({ email: loginKey });
+
+  if (!user) {
+    throw new Error('Invalid login details');
+  }
+
+  const isMatch = await bcrypt.compare(password, user.password);
+
+  if (!isMatch) {
+    throw new Error('Invalid login details');
+  }
+
+  return user;
+};
+
+teacherSchema.methods.generateAuthToken = async function () {
+  const user = this;
+  const token = jwt.sign({ _id: user._id, type: 'user' }, process.env.JWT_SECRETE_KEY);
+
+  user.tokens = user.tokens.concat({ token });
+  await user.save();
+
+  return token;
+};
+
+teacherSchema.plugin(uniqueValidator, { message: '{TYPE} must be unique.' });
+
+const Teacher = model('Teacher', teacherSchema);
+
+export default Teacher;
