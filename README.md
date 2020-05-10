@@ -62,7 +62,7 @@ This would shutdown the system.
 
 - Ifere Okibe [LinkedIn](https://www.linkedin.com/in/ifere-jo/) [Twitter](https://twitter.com/Iam_Ifere)
 - Opysko
-- Shedrack Ajaegbu
+- Shedrack Ajaegbu [LinkedIn](https://www.linkedin.com/in/ajaegbu-shedrack/) [Twitter](https://twitter.com/theshedman_)
 - Samuel Alex
 
 ## Contributing
