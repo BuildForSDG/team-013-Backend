@@ -3,24 +3,30 @@ barebones setup for JavaScript / Node projects replace this with a one-liner phr
 [![Codacy Badge](https://img.shields.io/badge/Code%20Quality-D-red)](https://img.shields.io/badge/Code%20Quality-D-red)
 
 
-## About
+## Description
+[Name of the project] is a platform where schols source for qualified and approved Teachers in various sectors or courses. This platform aims to provide qualified Teachers for schools to improve the educational system of the community.
 
-What is this project about. Ok to enrich here or the section above it with an image. 
+## Prerequisites
+[NodeJS] (https://devdocs.io/node/)
+[MongoDB] (https://docs.mongodb.com/)
 
-Once this repo has been setup on Codacy by the TTL, replace the above badge with the actual one from the Codacy dashboard, and add the code coverage badge as well. This is mandatory
+## Technologies
+[ExpressJs] (https://expressjs.com/)
+[Mongoose] (https://mongoosejs.com/docs/api.html)
+[NodeJs] (https://devdocs.io/node/)
+[MongoDB] (https://docs.mongodb.com/)
+[Parcel-bundler] (https://parceljs.org/getting_started.html)
+[Express-mongo-sanitize] (https://www.npmjs.com/package/express-mongo-sanitize)
 
-This is a simple JavaScript starter repo template for setting up your project. The setup contains
-
-- Jest: For runnung tests. We strongly recommend that JavaScript projects use Jest
-
-- Eslint & Prettier: For formatting code to match ESlint AirBnB coding standard. You might need to install the ESlint and Prettier plugins for your code editor to make the most of these utilities
-
-## Why
-
-Talk about what problem this solves, what SDG(s) and SGD targets it addresses and why these are imoirtant
-
-## Usage
- How would someone use what you have built, include URLs to the deployed app, service e.t.c when you have it setup
+## Features
+- User authentication `signup` and `signin`
+- User authentication `Login` and `Logout`
+- Admin `readAll` or `Get` all `Teachers`
+- Admin `deleteAll` `Teachers`
+- Admin and user `readOne` or GET one `Teacher`
+- Admin and user `deleteOne` `Teacher`
+- Admin, user `updateOne` `Teacher`
+- Admin `getAllApprovedTeachers`
 
 
 ## Setup
@@ -63,12 +69,12 @@ This would shutdown the system.
 - Ifere Okibe [LinkedIn](https://www.linkedin.com/in/ifere-jo/) [Twitter](https://twitter.com/Iam_Ifere)
 - Opysko
 - Shedrack Ajaegbu [LinkedIn](https://www.linkedin.com/in/ajaegbu-shedrack/) [Twitter](https://twitter.com/theshedman_)
-- Samuel Alex
+- Samuel Alexzender [linkedIn](https://www.linkedin.com/in/abiokorigho-samuel/) [Twitter](https://twitter.com/Alexzendersamu4)
 
 ## Contributing
 If this project sounds interesting to you and you'd like to contribute, thank you!
 First, you can send a mail to buildforsdg@andela.com to indicate your interest, why you'd like to support and what forms of support you can bring to the table, but here are areas we think we'd need the most help in this project :
-1.  area one (e.g this app is about human trafficking and you need feedback on your roadmap and feature list from the private sector / NGOs)
+1.  area one (e.g this app is about providing qualified Teachers to the community, but the teachers have to be graded first before they are approved to be qualify. So we need contributions on how to improve the grading system)
 2.  area two (e.g you want people to opt-in and try using your staging app at staging.project-name.com and report any bugs via a form)
 3.  area three (e.g here is the zoom link to our end-of sprint webinar, join and provide feedback as a stakeholder if you can)
 
@@ -79,6 +85,9 @@ Do you want to thank someone explicitly?
 Did someone’s blog post spark off a wonderful idea or give you a solution to nagging problem?
 
 It's powerful to always give credit.
+
+## Documentation
+The API documentation for this project can be found [Here]
 
 ## LICENSE
 MIT
