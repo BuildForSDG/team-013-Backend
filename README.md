@@ -4,7 +4,7 @@ barebones setup for JavaScript / Node projects replace this with a one-liner phr
 
 
 ## Description
-[Name of the project] is a platform where schols source for qualified and approved Teachers in various sectors or courses. This platform aims to provide qualified Teachers for schools to improve the educational system of the community.
+Felt Teachers is a platform where schools source for qualified and approved Teachers in various sectors or courses. This platform aims to provide qualified Teachers for schools to improve the educational system of the community.
 
 ## Prerequisites
 - [NodeJS](https://devdocs.io/node/)
