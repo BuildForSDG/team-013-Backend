@@ -7,16 +7,16 @@ barebones setup for JavaScript / Node projects replace this with a one-liner phr
 [Name of the project] is a platform where schols source for qualified and approved Teachers in various sectors or courses. This platform aims to provide qualified Teachers for schools to improve the educational system of the community.
 
 ## Prerequisites
-[NodeJS] (https://devdocs.io/node/)
-[MongoDB] (https://docs.mongodb.com/)
+[NodeJS](https://devdocs.io/node/)
+[MongoDB](https://docs.mongodb.com/)
 
 ## Technologies
-[ExpressJs] (https://expressjs.com/)
-[Mongoose] (https://mongoosejs.com/docs/api.html)
-[NodeJs] (https://devdocs.io/node/)
-[MongoDB] (https://docs.mongodb.com/)
-[Parcel-bundler] (https://parceljs.org/getting_started.html)
-[Express-mongo-sanitize] (https://www.npmjs.com/package/express-mongo-sanitize)
+[ExpressJs](https://expressjs.com/)
+[Mongoose](https://mongoosejs.com/docs/api.html)
+[NodeJs](https://devdocs.io/node/)
+[MongoDB](https://docs.mongodb.com/)
+[Parcel-bundler](https://parceljs.org/getting_started.html)
+[Express-mongo-sanitize](https://www.npmjs.com/package/express-mongo-sanitize)
 
 ## Features
 - User authentication `signup` and `signin`
