@@ -30,6 +30,12 @@ How will the community make use of this app?
 - After that they we need to be graded to prove if they are a good fit for schools in the community, that means they have too go through some tests which will prove if they are qualified to teach.
 - If they show that they are qualified by passing the tests, they will be marked as approved. Then schools can now come to employe them without any verification because they have been verified by passing the tests.
 
+How will a programmer make use of this app?
+- Get started by cloning the repo 'git clone '
+- change into the directory: cd team-013-Backend
+- Start dev server: yarn dev or npm run dev
+- Start liniting: yarn lint or npm run lint.
+- Once the server is started you can us Postman or any other testing tool to test the endpionts.
 
 ## Prerequisites
 - [NodeJS](https://devdocs.io/node/)
