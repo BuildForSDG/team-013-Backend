@@ -6,6 +6,8 @@ import mongoSanitize from 'express-mongo-sanitize';
 import { healthRoute, teacherRoute } from './routes';
 import { Database } from './db';
 
+const bodyParser = require('body-parser');
+
 // Initialize DB
 Database.db().then();
 
@@ -22,6 +24,8 @@ app.enable('trust proxy');
 app.use(cors());
 app.use(helmet());
 app.use(express.json({ limit: '10kb' }));
+const urlencodedParser = bodyParser.urlencoded({ extended: false });
+
 app.use(limiter);
 app.use(mongoSanitize());
 app.use(express.static(`${__dirname}/uploads`));
