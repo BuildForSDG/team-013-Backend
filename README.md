@@ -104,9 +104,8 @@ This would shutdown the system.
 ## Contributing
 If this project sounds interesting to you and you'd like to contribute, thank you!
 First, you can send a mail to buildforsdg@andela.com to indicate your interest, why you'd like to support and what forms of support you can bring to the table, but here are areas we think we'd need the most help in this project :
-1.  Area one: This app is about providing qualified Teachers to the community, but the teachers have to be graded first before they are approved to be qualify. So we need contributions on how to improve the grading system.
-2.  Area two: We want people to opt-in and try using staging app at staging.project-name.com and report any bugs via a form.
-3.  Area three: here is the [zoom-link] to our end-of sprint webinar, join and provide feedback as a stakeholder if you can
+1.  Area two: We want people to opt-in and try using staging app at staging.project-name.com and report any bugs via a form.
+2.  Area three: here is the [zoom-link] to our end-of sprint webinar, join and provide feedback as a stakeholder if you can
 
 ## Acknowledgements
 
