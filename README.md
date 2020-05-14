@@ -27,7 +27,7 @@ SDG(s) aim is to solve some problems which pose a challenge and difficulties in 
 How will the community make use of this app?
 - Comunity can make use of this app first  by registering, and only qualified teachers are allowed to apply.
 - After successful registration they need to supply their credentials to prove that they are qualified to teach in any schools.
-- After that they we need to be graded to prove if they are a good fit for schools in the community, that means they have too go through some tests which will prove if they are qualified to teach.
+- After that they will need to be graded to prove if they are a good fit for schools in the community, that means they have too go through some tests which will prove if they are qualified to teach.
 - If they show that they are qualified by passing the tests, they will be marked as approved. Then schools can now come to employe them without any verification because they have been verified by passing the tests.
 
 How will a programmer make use of this app?
