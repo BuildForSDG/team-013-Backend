@@ -7,17 +7,18 @@ barebones setup for JavaScript / Node projects replace this with a one-liner phr
 Felt Teachers is a platform where schools source for qualified and approved Teachers in various sectors or courses. This platform aims to provide qualified Teachers for schools to improve the educational system of the community.
 
 ## About
-What is this project about. Ok to enrich here or the section above it with an image.
+This is a solution that will help substantially increase the supply of qualified teachers in your community. Included is a plan to integrate or collaborate with international cooperations for teachers to be trained in developing countries.
 
 Once this repo has been setup on Codacy by the TTL, replace the above badge with the actual one from the Codacy dashboard, and add the code coverage badge as well. This is mandatory
 
 This is a simple JavaScript starter repo template for setting up your project. The setup contains
 
-- Jest: For runnung tests. We strongly recommend that JavaScript projects use Jest
+- Jest: For runnung tests. We strongly recommend that JavaScript projects use Jest.
+- NPM: For installing nodejs packages.
+- Eslint: For formating code to javascript standard.
+- Babel-node: For testing the project locally
 
-- Eslint & Prettier: For formatting code to match ESlint AirBnB coding standard. You might need to install the ESlint and Prettier plugins for your code editor to make the most of these utilities.
-- Babel: Babel allow us to use the Es6 and it interpret it for  nodejs to understand. You might need to install some babel packages to make it works.
-- nodemon: nodemon is use to test the code on development, once it is on production mode nodemon is  not needed. For nodemon to work we need to install it as a devDependencies.
+
 
 ## Why
 Why is this project needed or why is it important?
@@ -122,8 +123,10 @@ The app was built by our team we did't use someone else's code.
 Yes all thanks to our team for puttings heads together to acheive this.
 
 - Did someone’s blog post spark off a wonderful idea or give you a solution to nagging problem?
+No
 
 It's powerful to always give credit.
+All credit goes to our team, `team-013`
 
 ## Documentation
 The API documentation for this project can be found [Here]
