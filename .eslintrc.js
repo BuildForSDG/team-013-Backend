@@ -35,5 +35,6 @@ module.exports = {
     'consistent-return': 0,
     'no-underscore-dangle': 0,
     'func-names': 0,
+    'prettier/prettier': 0
   }
 };
