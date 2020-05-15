@@ -22,6 +22,7 @@ app.enable('trust proxy');
 app.use(cors());
 app.use(helmet());
 app.use(express.json({ limit: '10kb' }));
+
 app.use(limiter);
 app.use(mongoSanitize());
 app.use(express.static(`${__dirname}/uploads`));

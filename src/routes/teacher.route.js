@@ -3,7 +3,17 @@ import { TeacherController } from '../controllers';
 import { upload, authenticate, permit } from '../middleware';
 
 const router = Router();
-const { login, logOut, deleteAll, deleteOne, readAll, readOne, register, update, readAllApprovedTeachers } = new TeacherController();
+const {
+  login,
+  logOut,
+  deleteAll,
+  deleteOne,
+  readAll,
+  readOne,
+  register,
+  update,
+  readAllApprovedTeachers
+} = new TeacherController();
 
 router.route('/login').post(login);
 router.route('/logout').get(authenticate, logOut);
