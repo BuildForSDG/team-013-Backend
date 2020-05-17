@@ -12,7 +12,7 @@ This is a solution that will help substantially increase the supply of qualified
 
 ## Why
 
-The aim of this project is to solve the problem faced in finding qualified teachers in our secondary schools. The youth they say are the leaders of tommorrow and as such the standard of education they receive is of utmost importance to the development of their community and country at large. Felt Teachers seeks to solve this problem by testing for qualified teachers, providing feedback and study material for teachers and exposing teachers to international standard trainings. The platform provides a one-stop shop for schools, parents, government agencies and international bodies looking for knowledgable teachers for their pupils, grading platform to ascertain their teacher knoweledge or as a data source to help during educational interventions.
+The aim of this project is to solve the problem faced in finding qualified teachers in our secondary schools. The youth they say are the leaders of tommorrow and as such the standard of education they receive is of utmost importance to the development of their community and country at large. Felt Teachers seeks to solve this problem by testing for qualified teachers, providing feedback and study material for teachers and exposing teachers to international standard trainings. The platform provides a one-stop shop for schools, parents, government agencies and international bodies looking for knowledgable teachers for their pupils, grading platform to ascertain their teacher's knoweledge or as a data source to help during educational interventions.
 
 ## Usage
 How will the community make use of this app?
