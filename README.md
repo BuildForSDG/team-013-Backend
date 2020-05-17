@@ -3,24 +3,58 @@ barebones setup for JavaScript / Node projects replace this with a one-liner phr
 [![Codacy Badge](https://img.shields.io/badge/Code%20Quality-D-red)](https://img.shields.io/badge/Code%20Quality-D-red)
 
 
+## Description
+Felt Teachers is a platform where schools source for qualified and approved Teachers in various sectors or courses. This platform aims to provide qualified Teachers for schools to improve the educational system of the community.
+
 ## About
+This is a solution that will help substantially increase the supply of qualified teachers in your community. Included is a plan to integrate or collaborate with international cooperations for teachers to be trained in developing countries.
 
-What is this project about. Ok to enrich here or the section above it with an image. 
-
-Once this repo has been setup on Codacy by the TTL, replace the above badge with the actual one from the Codacy dashboard, and add the code coverage badge as well. This is mandatory
-
-This is a simple JavaScript starter repo template for setting up your project. The setup contains
-
-- Jest: For runnung tests. We strongly recommend that JavaScript projects use Jest
-
-- Eslint & Prettier: For formatting code to match ESlint AirBnB coding standard. You might need to install the ESlint and Prettier plugins for your code editor to make the most of these utilities
 
 ## Why
 
-Talk about what problem this solves, what SDG(s) and SGD targets it addresses and why these are imoirtant
+The aim of this project is to solve the problem faced in finding qualified teachers in our secondary schools. The youth they say are the leaders of tommorrow and as such the standard of education they receive is of utmost importance to the development of their community and country at large. Felt Teachers seeks to solve this problem by testing for qualified teachers, providing feedback and study material for teachers and exposing teachers to international standard trainings. The platform provides a one-stop shop for schools, parents, government agencies and international bodies looking for knowledgable teachers for their pupils, grading platform to ascertain their teacher knoweledge or as a data source to help during educational interventions.
 
 ## Usage
- How would someone use what you have built, include URLs to the deployed app, service e.t.c when you have it setup
+How will the community make use of this app?
+- Comunity can make use of this app first  by registering, and only qualified teachers are allowed to apply.
+- After successful registration they need to supply their credentials to prove that they are qualified to teach in any schools.
+- After that they will need to be graded to prove if they are a good fit for schools in the community, that means they have too go through some tests which will prove if they are qualified to teach.
+- If they show that they are qualified by passing the tests, they will be marked as approved. Then schools can now come to employe them without any verification because they have been verified by passing the tests.
+
+How will a programmer make use of this app?
+- Get started by cloning the repo 'git clone https://github.com/BuildForSDG/team-013-Backend.git'
+- change into the directory: cd team-013-Backend
+- Install yarn package manager installed (optional if you prefer npm)
+- Start dev server: yarn dev
+- Start liniting: yarn lint
+- Once the server is started you can us Postman or any other testing tool to test the endpionts.
+- Jest: For runnung tests. We strongly recommend that JavaScript projects use Jest.
+- NPM: For installing nodejs packages.
+- Eslint: For formating code to javascript standard.
+- Babel-node: For testing the project locally
+
+## Prerequisites
+- [NodeJS](https://devdocs.io/node/)
+- [MongoDB](https://docs.mongodb.com/)
+- Yarn package manager installed in node (for uptimal performance)
+
+## Technologies
+- [ExpressJs](https://expressjs.com/)
+- [Mongoose](https://mongoosejs.com/docs/api.html)
+- [NodeJs](https://devdocs.io/node/)
+- [MongoDB](https://docs.mongodb.com/)
+- [Parcel-bundler](https://parceljs.org/getting_started.html)
+- [Express-mongo-sanitize](https://www.npmjs.com/package/express-mongo-sanitize)
+
+## Features
+- User authentication `signup` and `signin`
+- User authentication `Login` and `Logout`
+- Admin `readAll` or `Get` all `Teachers`
+- Admin `deleteAll` `Teachers`
+- Admin and user `readOne` or GET one `Teacher`
+- Admin and user `deleteOne` `Teacher`
+- Admin, user `updateOne` `Teacher`
+- Admin `getAllApprovedTeachers`
 
 
 ## Setup
@@ -54,32 +88,36 @@ This would shutdown the system.
 - Run tests: `yarn test`
 - Run tests with test coverage info: `yarn test:cover`
 - Check the codebase for proper syntax and formatting compliance: `yarn lint`
-- Run your app in local dev mode: `yarn dev`. This puts the bundled app in a `dist` folder, set up a local web server at localhost:5000, and continues to watch for your code changes which it syncs with the local server. This means if you loaded the app in a browser, it will auto-refresh as you code along. Feel free to use whatever bundler best meets your needs. Parcel was only added as a sample and for those looking for a simple but effective solution to the hassle of bundlers. 
-- You can access the REST API interface from localhost:5000/api/<path>
-- The paths are /profile /profile/id etc.
+- Run your app in local dev mode: `yarn dev`. This puts the bundled app in a `dist` folder, set up a local web server at __localhost:5000__ by default, and continues to watch for your code changes which it syncs with the local server. This means if you loaded the app in a browser, it will auto-refresh as you code along. Feel free to use whatever bundler best meets your needs. Parcel was only added as a sample and for those looking for a simple but effective solution to the hassle of bundlers. 
+- You can access the REST API interface from [localhost:5000/api/](https://teachers-placement-backend.herokuapp.com)
+- The paths are:
+- `/health`
+- `/teachers`
+- `/teachers/me`
+- `/teachers/approved`
+- `/login`
 
 ## Authors
 
 - Ifere Okibe [LinkedIn](https://www.linkedin.com/in/ifere-jo/) [Twitter](https://twitter.com/Iam_Ifere)
 - Opysko
 - Shedrack Ajaegbu [LinkedIn](https://www.linkedin.com/in/ajaegbu-shedrack/) [Twitter](https://twitter.com/theshedman_)
-- Samuel Alex
+- Samuel Alexzender [linkedIn](https://www.linkedin.com/in/abiokorigho-samuel/) [Twitter](https://twitter.com/Alexzendersamu4)
 
 ## Contributing
 If this project sounds interesting to you and you'd like to contribute, thank you!
 First, you can send a mail to buildforsdg@andela.com to indicate your interest, why you'd like to support and what forms of support you can bring to the table, but here are areas we think we'd need the most help in this project :
-1.  area one (e.g this app is about human trafficking and you need feedback on your roadmap and feature list from the private sector / NGOs)
-2.  area two (e.g you want people to opt-in and try using your staging app at staging.project-name.com and report any bugs via a form)
-3.  area three (e.g here is the zoom link to our end-of sprint webinar, join and provide feedback as a stakeholder if you can)
+1. Felt Teachers is poised at bridging the gap left by lack of qualified teacher. We are the bridge to providing quality teachers in your community
+2.  We want people to opt-in and try using staging app at staging.project-name.com and report any bugs via a form.
+3.  We are always pleased to hear your feedback and you can contact us by filling this form at [Felt Teacher](http://feltteacher.com/contactus)
 
 ## Acknowledgements
 
-Did you use someone else’s code?
-Do you want to thank someone explicitly?
-Did someone’s blog post spark off a wonderful idea or give you a solution to nagging problem?
+We would like to thank each team member for the sleepless night put into achieving this dream of eradicating unqualified teachers from our community. We also would like to thank Andela for the opportunity and support which have allowed us achieve this huge step in the history of nigeria.
 
-It's powerful to always give credit.
+
+## Documentation
+A more robust documentation is under development, as for now feel free to use this README as a starting point.
 
 ## LICENSE
 MIT
-
