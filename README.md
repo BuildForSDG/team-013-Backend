@@ -90,7 +90,7 @@ This would shutdown the system.
 - Run tests with test coverage info: `yarn test:cover`
 - Check the codebase for proper syntax and formatting compliance: `yarn lint`
 - Run your app in local dev mode: `yarn dev`. This puts the bundled app in a `dist` folder, set up a local web server at __localhost:5000__ by default, and continues to watch for your code changes which it syncs with the local server. This means if you loaded the app in a browser, it will auto-refresh as you code along. 
-- By default, the development server REST API interface can be accessed from __localhost:5000/api/__
+- By default, the development server REST API interface can be accessed at __localhost:5000/api/__
 - The paths are:
 - `/health`
 - `/teachers`
