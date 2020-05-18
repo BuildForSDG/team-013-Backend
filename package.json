@@ -1,7 +1,7 @@
 {
-  "name": "t-grade",
+  "name": "felt-teachers",
   "version": "0.0.1",
-  "description": "T-Grade is a platform for grading qualified teachers and linking them to schools in thier community ",
+  "description": "Felt Teachers is a platform for grading qualified teachers and linking them to schools in thier community ",
   "keywords": [
     "Angular",
     "ExpressJS",
