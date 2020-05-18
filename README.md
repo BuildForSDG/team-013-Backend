@@ -23,11 +23,11 @@ How will the community make use of this app?
 - Both qualified and unqualified teachers are provided learning materials to improve their knowlege and unqualified teachers are allowed to re-take the test after a stipulated period.
 
 How will a programmer make use of this app?
-- Get started by cloning the repo 'git clone https://github.com/BuildForSDG/team-013-Backend.git'
-- change into the directory: cd team-013-Backend
+- Get started by cloning the repo `git clone https://github.com/BuildForSDG/team-013-Backend.git`
+- change into the directory: `cd team-013-Backend`
 - Install yarn package manager (optional if you prefer npm)
-- Start dev server: yarn dev
-- Start liniting: yarn lint
+- Start dev server: `yarn dev`
+- Start liniting: `yarn lint`
 - Once the server is started you can us Postman or any other testing tool to test the endpionts.
 - Jest: For runnung tests. We strongly recommend that JavaScript projects use Jest.
 - Yarn: For installing nodejs packages. (optional if you prefer npm)
@@ -68,7 +68,7 @@ After clonning the repo to your local machine and moving into the cloned folder,
 
 Run `yarn dev` or `npm run dev` to start the development server.
 
-All tests should be written in the `__tests__' folder. There's a sample in there.
+All tests should be written in the `__tests__` folder. There's a sample in there.
 
 This starter uses [Parcel](https://parceljs.org/getting_started.html) as the bundler. It is much simpler that WebPack and the others.
 
