@@ -4,39 +4,40 @@ barebones setup for JavaScript / Node projects replace this with a one-liner phr
 
 
 ## Description
-Felt Teachers is a platform where schools source for qualified and approved Teachers in various sectors or courses. This platform aims to provide qualified Teachers for schools to improve the educational system of the community.
+Felt Teachers is a platform that provides qualified teachers to schools and parents for their pupils. It also provides a grading platform where institution (government and international bodies) can use to grade their employed teaching staff. Grading of staff can help ascertain the level of knowledge they posses in their field and thus level of knowledge transferred to pupils.
 
 ## About
-This is a solution that will help substantially increase the supply of qualified teachers in your community. Included is a plan to integrate or collaborate with international cooperations for teachers to be trained in developing countries.
+This is a solution that will help substantially increase the supply of qualified teachers in your community. Included is a plan to integrate or collaborate with international co-operations for teachers to be trained in developing countries.
 
 
 ## Why
 
-The aim of this project is to solve the problem faced in finding qualified teachers in our secondary schools. The youth they say are the leaders of tommorrow and as such the standard of education they receive is of utmost importance to the development of their community and country at large. Felt Teachers seeks to solve this problem by testing for qualified teachers, providing feedback and study material for teachers and exposing teachers to international standard trainings. The platform provides a one-stop shop for schools, parents, government agencies and international bodies looking for knowledgable teachers for their pupils, grading platform to ascertain their teacher's knoweledge or as a data source to help during educational interventions.
+The aim of this project is to solve the problem faced in finding qualified teachers in our secondary schools. The youth they say are the leaders of tomorrow and as such the standard of education they receive is of utmost importance to the development of their community and country at large. Felt Teachers seeks to solve this problem by testing for qualified teachers, providing feedback and study material for teachers, and exposing teachers to international standard training. The platform provides a one-stop-shop for schools, parents, government agencies, and international bodies looking for knowledgable teachers for their pupils, grading platform to ascertain their teacher knowledge, or as a data-source to help during educational interventions.
 
 ## Usage
 How will the community make use of this app?
 - Comunity can make use of this app first  by registering, and only qualified teachers are allowed to apply.
-- After successful registration they need to supply their credentials to prove that they are qualified to teach in any schools.
-- After that they will need to be graded to prove if they are a good fit for schools in the community, that means they have too go through some tests which will prove if they are qualified to teach.
-- If they show that they are qualified by passing the tests, they will be marked as approved. Then schools can now come to employe them without any verification because they have been verified by passing the tests.
+- After successful registration, prospective teachers are required to undertake a test to ascertain their knowledge.
+- The test and other critiria (e.g. interview etc.) would be used to determine if a prospective teacher is qualified or not.
+- Qualified teachers are linked to job placement opportunity within their community.
+- Both qualified and unqualified teachers are provided learning materials to improve their knowlege and unqualified teachers are allowed to re-take the test after a stipulated period.
 
 How will a programmer make use of this app?
 - Get started by cloning the repo 'git clone https://github.com/BuildForSDG/team-013-Backend.git'
 - change into the directory: cd team-013-Backend
-- Install yarn package manager installed (optional if you prefer npm)
+- Install yarn package manager (optional if you prefer npm)
 - Start dev server: yarn dev
 - Start liniting: yarn lint
 - Once the server is started you can us Postman or any other testing tool to test the endpionts.
 - Jest: For runnung tests. We strongly recommend that JavaScript projects use Jest.
-- NPM: For installing nodejs packages.
+- Yarn: For installing nodejs packages. (optional if you prefer npm)
 - Eslint: For formating code to javascript standard.
-- Babel-node: For testing the project locally
+- Babel-node: For transforming es6+ to es5
 
 ## Prerequisites
 - [NodeJS](https://devdocs.io/node/)
 - [MongoDB](https://docs.mongodb.com/)
-- Yarn package manager installed in node (for uptimal performance)
+- Yarn package manager installed in node (for optimal performance)
 
 ## Technologies
 - [ExpressJs](https://expressjs.com/)
@@ -88,8 +89,8 @@ This would shutdown the system.
 - Run tests: `yarn test`
 - Run tests with test coverage info: `yarn test:cover`
 - Check the codebase for proper syntax and formatting compliance: `yarn lint`
-- Run your app in local dev mode: `yarn dev`. This puts the bundled app in a `dist` folder, set up a local web server at __localhost:5000__ by default, and continues to watch for your code changes which it syncs with the local server. This means if you loaded the app in a browser, it will auto-refresh as you code along. Feel free to use whatever bundler best meets your needs. Parcel was only added as a sample and for those looking for a simple but effective solution to the hassle of bundlers. 
-- You can access the REST API interface from [localhost:5000/api/](https://teachers-placement-backend.herokuapp.com)
+- Run your app in local dev mode: `yarn dev`. This puts the bundled app in a `dist` folder, set up a local web server at __localhost:5000__ by default, and continues to watch for your code changes which it syncs with the local server. This means if you loaded the app in a browser, it will auto-refresh as you code along. 
+- By default, the development server REST API interface can be accessed from __localhost:5000/api/__
 - The paths are:
 - `/health`
 - `/teachers`
