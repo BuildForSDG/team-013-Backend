@@ -36,7 +36,7 @@ export function decodeJwtToken(req) {
   const [authBearer, token] = requestHeaderAuthorization.split(' ');
 
   if (authBearer !== 'Bearer') {
-    throw new Error('Authentication Failed');
+    throwError(401, 'Authentication Failed');
   }
 
   const jwtPayload = jwt.verify(token, process.env.JWT_SECRETE_KEY);
