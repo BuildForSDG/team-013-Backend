@@ -1,5 +1,5 @@
 import { BaseController } from '.';
-import Teacher from '../model/teacher.model';
+import { Teacher } from '../model';
 import { throwError } from '../utils/handleErrors';
 
 export class TeacherController extends BaseController {
