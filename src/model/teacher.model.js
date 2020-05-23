@@ -2,8 +2,8 @@ import bcrypt from 'bcrypt';
 import { config as dotConfig } from 'dotenv';
 import jwt from 'jsonwebtoken';
 import { model, Schema } from 'mongoose';
-import validator from 'validator';
 import uniqueValidator from 'mongoose-unique-validator';
+import validator from 'validator';
 
 dotConfig();
 
@@ -145,9 +145,10 @@ teacherSchema.pre('save', async function save(next) {
 });
 
 teacherSchema.statics.findByCredentials = async (loginKey, password) => {
-  const user = await Teacher.findOne({ phone: loginKey }) ||
-    await Teacher.findOne({ username: loginKey }) ||
-    await Teacher.findOne({ email: loginKey });
+  const user =
+    (await Teacher.findOne({ phone: loginKey })) ||
+    (await Teacher.findOne({ username: loginKey })) ||
+    (await Teacher.findOne({ email: loginKey }));
 
   if (!user) {
     throw new Error('Invalid login details');
