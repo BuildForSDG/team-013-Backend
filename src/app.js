@@ -1,10 +1,11 @@
-import express from 'express';
 import cors from 'cors';
-import helmet from 'helmet';
-import RateLimit from 'express-rate-limit';
+import express from 'express';
 import mongoSanitize from 'express-mongo-sanitize';
-import { healthRoute, teacherRoute } from './routes';
+import RateLimit from 'express-rate-limit';
+import helmet from 'helmet';
+import path from 'path';
 import { Database } from './db';
+import { healthRoute, teacherRoute } from './routes';
 
 // Initialize DB
 Database.db().then();
@@ -25,7 +26,7 @@ app.use(express.json({ limit: '10kb' }));
 
 app.use(limiter);
 app.use(mongoSanitize());
-app.use(express.static(`${__dirname}/uploads`));
+app.use('/uploads', express.static(path.join(__dirname, '../uploads')));
 
 // Endpoints
 app.use('/api/', healthRoute);

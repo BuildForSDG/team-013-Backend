@@ -1,1 +1,1 @@
-export { default } from './teacher.model';
+export { default as Teacher } from './teacher.model';
