@@ -5,7 +5,7 @@ import RateLimit from 'express-rate-limit';
 import helmet from 'helmet';
 import path from 'path';
 import { Database } from './db';
-import { healthRoute, teacherRoute } from './routes';
+import { healthRoute, teacherRoute, QuestionRoute } from './routes';
 
 // Initialize DB
 Database.db().then();
@@ -31,5 +31,6 @@ app.use('/uploads', express.static(path.join(__dirname, '../uploads')));
 // Endpoints
 app.use('/api/', healthRoute);
 app.use('/api/', teacherRoute);
+app.use('/api/', QuestionRoute);
 
 export default app;
