@@ -146,4 +146,26 @@ export class TeacherController extends BaseController {
       super.error(res, e);
     }
   }
+
+  async updateTeacherScore(req, res) {
+    try {
+      const { score } = req.body;
+
+      // Update teacher's score
+      req.user.score = score;
+
+      // Approve the teacher if he scores 80 and above
+      if (score >= 80) {
+        req.user.approved = true;
+      }
+
+      // Save the Teacher's updated data to DB
+      const updatedTeacher = await req.user.save();
+
+      // Respond to the client with the saved data
+      super.success(res, updatedTeacher, 'Update Successful');
+    } catch (e) {
+      super.error(res, e);
+    }
+  }
 }
