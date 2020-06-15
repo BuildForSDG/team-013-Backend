@@ -1,6 +1,6 @@
 import { Router } from 'express';
 import { TeacherController } from '../controllers';
-import { upload, authenticate, permit } from '../middleware';
+import { authenticate, permit, upload } from '../middleware';
 
 const router = Router();
 const {
@@ -12,6 +12,7 @@ const {
   readOne,
   register,
   update,
+  updateTeacherScore,
   readAllApprovedTeachers
 } = new TeacherController();
 
@@ -27,6 +28,8 @@ router
   .get(authenticate, permit(['admin', 'user']), readOne)
   .delete(authenticate, permit(['admin', 'user']), deleteOne)
   .put(upload.single('image'), authenticate, permit(['admin', 'user']), update);
+
+router.route('/teachers/me/score').post(authenticate, permit(['admin', 'user']), updateTeacherScore);
 
 router.get('/teachers/approved', authenticate, permit(['admin']), readAllApprovedTeachers);
 
