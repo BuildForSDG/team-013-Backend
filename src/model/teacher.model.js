@@ -66,6 +66,9 @@ const teacherSchema = new Schema(
       type: String,
       default: 'user'
     },
+    score: {
+      type: Number
+    },
     yearOfExperience: {
       type: String
     },
